@@ -1,0 +1,22 @@
+<link href='https://aryabhata.aeonic.me/styles/sigma.css' rel='stylesheet' type='text/css'/>
+<script src="https://cdn.aeonic.me/latex.js"></script>
+<h2>Integrator</h2>
+<hr/>
+<p><label for='function'>Function: f(x)=<input type='text' id='function' value='x**2'/></label></p>
+<p><label for='precision'>Precision:  10^<input type='number' id='precision' value='-3'/></label></p>
+<p><label for='minvalue'>min-value:  x=<input type='number' id='minvalue' value='0'/></label></p>
+<p><label for='maxvalue'>max-value:  x=<input type='number' id='maxvalue' value='6'/></label></p>
+<p>Function: f(x)=x<sup>2</sup></p>
+<div class='latex'>\int_{max}^{min}(f(x))</div>
+<hr/>
+<p id='ansbox'>answer</p>
+<button onclick='calcIntegral()'>Calculate Integral</button>
+<form>
+  <label for='additive'><input type='radio' checked='checked' id='additive' name='hyperoperation'/> Additive?</label><br/>
+  <label for='multiplicative'><input type='radio' id='multiplicative' name='hyperoperation'/> Multiplicative?</label><br/>
+  <label for='exponential'><input type='radio' id='exponential' name='hyperoperation'/> Exponentiative?</label><br/>
+  <label for='doubleexponential'><input type='radio' id='doubleexponential' name='hyperoperation'/> Double exponentiative?</label><br/>
+  <label for='dhke'><input type='radio' id='dhke' name='hyperoperation'/> Diffie–Hellman key exchange-ative?</label><br/>
+  <label for='ncpoly'><input type='radio' id='ncpoly' name='hyperoperation'/> Non-centred polygonal?</label><br/>
+  <label for='ycpoly'><input type='radio' id='ycpoly' name='hyperoperation'/> Centred polygonal?</label><br/>
+</form>
